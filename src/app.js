@@ -23,14 +23,14 @@ app.use(express.static(publicDir));
 app.get("/", (req, res) => {
   res.render("index", {
     title: "Weather",
-    name: "Andrew Mead"
+    name: "Carmen Paun"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
-    name: "Andrew Mead"
+    name: "Carmen Paun"
   });
 });
 
@@ -38,7 +38,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
     message: "Testing help page",
-    name: "Andrew Mead"
+    name: "Carmen Paun"
   });
 });
 
@@ -89,7 +89,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404 Help",
-    name: "Andrew Mead",
+    name: "Carmen Paun",
     errorMessage: "Help article not found"
   });
 });
@@ -97,7 +97,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Andrew Mead",
+    name: "Carmen Paun",
     errorMessage: "Page not found"
   });
 });
